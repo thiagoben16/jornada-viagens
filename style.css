@@ -20,3 +20,50 @@
   --texto-peso: 400;
   --menu-peso: 500;
 }
+
+@media screen and (max-width: 320px) {
+  header {
+    max-width: 100%;
+    background-color: black;
+    font-family: "Montserrat";
+  }
+
+  header img {
+    width: 50%;
+    height: 50%;
+  }
+
+  #cabecalho-menu {
+    width: 15%;
+    height: 20%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 37px 24px;
+  }
+  #menu {
+    display: none;
+  }
+  #menu a {
+    text-decoration: none;
+    color: var(--cor-texto2);
+    padding: 10px 0;
+  }
+  #cabecalho-menu:hover + #menu {
+    position: absolute;
+    width: 160px;
+    top: 20%;
+    right: 0%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    background-color: black;
+    color: white;
+  }
+}
