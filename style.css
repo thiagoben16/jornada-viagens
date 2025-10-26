@@ -23,28 +23,27 @@
 
 @media screen and (max-width: 320px) {
   header {
-    width: 100%;
-    max-width: 320px;
-    height: 138px;
+    max-width: 100%;
     background-color: black;
     font-family: "Montserrat";
   }
 
   header img {
-    width: 68px;
-    height: 64px;
+    width: 50%;
+    height: 50%;
   }
 
   #cabecalho-menu {
-    width: 32px;
-    height: 32px;
+    width: 15%;
+    height: 20%;
   }
 
   header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 37px 24px;
   }
   #menu {
     display: none;
@@ -57,7 +56,7 @@
   #cabecalho-menu:hover + #menu {
     position: absolute;
     width: 160px;
-    top: 138px;
+    top: 20%;
     right: 0%;
     display: inline-flex;
     flex-direction: column;
