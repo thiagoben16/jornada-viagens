@@ -66,4 +66,28 @@
     background-color: black;
     color: white;
   }
+
+  /* sessao principa*/
+
+  .main-banner {
+    max-width: 320px;
+    height: 400px;
+  }
+
+  .main-banner img {
+    width: 100%;
+  }
+
+  .banner-text {
+    width: 100%;
+    height: 256px;
+    font-family: "Montserrat";
+  }
+
+  .banner-text p {
+    margin: 48px 24px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
