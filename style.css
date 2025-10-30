@@ -96,10 +96,13 @@ body {
     font-weight: 700;
   }
   .main-ofertas {
+    width: 100%;
+    height: 500px;
     text-align: center;
     font-family: "Montserrat";
     font-size: 1.5rem;
     font-weight: bolder;
+    padding: 2rem 0;
   }
 
   .borda {
@@ -108,6 +111,47 @@ body {
     border-bottom-left-radius: 5px;
     max-width: 100%;
     margin: 2% 25%;
+  }
+
+  .oferta-cards {
+    width: 100%;
+    height: 500px;
+  }
+
+  .cards {
+    max-width: 100%;
+    height: 10%;
+    margin: 5% 10%;
+    padding: 2rem 0;
+    position: relative;
+    box-shadow: 10px 15px 8px #555555;
+    border-radius: 0.5rem;
+  }
+
+  #card-imagem1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8 #0000;
+    border-radius: 0.5rem;
+  }
+  .cards-text {
+    color: var(--background-secundary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    text-shadow: 2px 5px 5px #000000;
+  }
+
+  .cards-text a {
+    padding: 1rem 4rem;
+    background-color: #b81515;
+    border-radius: 0.5rem;
   }
 }
 
