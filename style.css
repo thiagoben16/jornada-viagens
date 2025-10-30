@@ -97,7 +97,7 @@ body {
   }
   .main-ofertas {
     width: 100%;
-    height: 500px;
+    height: auto;
     text-align: center;
     font-family: "Montserrat";
     font-size: 1.5rem;
@@ -224,5 +224,184 @@ body {
     border-bottom-left-radius: 5px;
     max-width: 100%;
     margin: 2% 25%;
+  }
+  .ofertas-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cards {
+    width: 100%;
+    height: auto;
+    margin: 2% 10%;
+    padding: 1rem 0;
+    position: relative;
+    box-shadow: 10px 15px 8px #555555;
+    border-radius: 0.5rem;
+  }
+
+  #card-imagem1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8 #0000;
+    border-radius: 0.5rem;
+  }
+  .cards-text {
+    color: var(--background-secundary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    font-size: 0.8rem;
+    text-shadow: 2px 5px 5px #000000;
+  }
+
+  .cards-text a {
+    padding: 1rem 4rem;
+    background-color: #b81515;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #cabecalho-menu {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  #menu a {
+    text-decoration: none;
+    color: var(--cor-texto2);
+    margin: 10% 0;
+    font-size: 1.5rem;
+  }
+  #menu a:hover {
+    border-bottom: solid 2px var(--cor-texto2);
+    margin: 9% 0;
+  }
+
+  .main-banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-banner img {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .banner-text {
+    width: 100%;
+    font-family: "Montserrat";
+  }
+
+  .banner-text p {
+    padding: 2rem 4rem;
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  .main-ofertas {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .borda {
+    border-bottom: solid 4px #8f0101;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-width: 100%;
+    margin: 2% 25%;
+  }
+  .ofertas-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cards {
+    width: 30%;
+    height: 40vh;
+    margin: 2% 2%;
+    padding: 0 0.5rem 0 1rem;
+    position: relative;
+    display: flex;
+
+    box-shadow: 10px 15px 8px #555555;
+    border-radius: 0.5rem;
+  }
+
+  #card-imagem1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8 #0000;
+    border-radius: 0.5rem;
+  }
+  .cards-text {
+    color: var(--background-secundary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    font-size: 1rem;
+    text-shadow: 2px 5px 5px #000000;
+  }
+
+  .cards-text a {
+    padding: 1rem 4rem;
+    background-color: #b81515;
+    border-radius: 0.5rem;
+  }
+
+  .cards-text a:hover {
+    padding: 1rem 4rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    color: #b81515;
+    cursor: pointer;
+    text-shadow: none;
   }
 }
