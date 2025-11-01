@@ -5,6 +5,8 @@
   font-display: swap;
 }
 
+@import url("hero.css");
+
 :root {
   --background-primory-color: #ffff;
   --background-secundary-color: #f5f5f5;
@@ -25,10 +27,15 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
+  body {
+    font-family: "Montserrat";
+    font-size: 1rem;
+  }
+  /*cabecalho*/
   header {
     width: 100%;
-    background-color: black;
+    background-color: #222222;
     font-family: "Montserrat";
     display: flex;
     flex-direction: row;
@@ -38,13 +45,13 @@ body {
   }
 
   header img {
-    width: 68px;
-    height: 64px;
+    width: 50%;
+    height: 50%;
   }
 
   #cabecalho-menu {
-    width: 10%;
-    height: 20%;
+    width: 25px;
+    height: 15px;
   }
 
   #menu {
@@ -58,350 +65,196 @@ body {
   #cabecalho-menu:hover + #menu {
     position: absolute;
     width: 160px;
-    top: 4rem;
+    top: 2rem;
     right: 0%;
     display: inline-flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     gap: 2rem;
-    background-color: rgb(12, 12, 12);
+    background-color: #222222;
     color: white;
     z-index: 2;
     padding: 1rem;
+    border-radius: 5px;
   }
 
-  /* sessao principa*/
-
-  .main-banner {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .main-banner img {
+  /*sessao hero*/
+  .hero {
+    height: 800px;
     width: 100%;
   }
-
-  .banner-text {
+  .hero-img {
+    height: 50%;
     width: 100%;
-    height: auto;
+    background-image: url("/imagens/banner-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-text {
+    height: 100%;
+    width: 100%;
     font-family: "Montserrat";
-  }
-
-  .banner-text p {
-    margin: 1rem 2rem;
     text-align: center;
-    font-size: 0.9rem;
-    line-height: 1rem;
-    font-weight: 700;
-  }
-  .main-ofertas {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-family: "Montserrat";
     font-size: 1.5rem;
-    font-weight: bolder;
-    padding: 2rem 0;
+    line-height: 2.5rem;
+    margin-top: 10%;
+  }
+  .hero-text p {
+    padding: 0 10%;
   }
 
-  .borda {
-    border-bottom: solid 4px #8f0101;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    max-width: 100%;
-    margin: 2% 25%;
+  /*sessão ofertas*/
+  .container-ofertas {
+    text-align: center;
+  }
+  .container-ofertas h4 {
+    padding-bottom: 2%;
+    font-weight: bold;
+    font-size: 2rem;
   }
 
-  .oferta-cards {
-    width: 100%;
-    height: 500px;
+  #sublinhado {
+    border-bottom: 0.4rem solid #b81515;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .cards {
     max-width: 100%;
-    height: 10%;
-    margin: 5% 10%;
-    padding: 2rem 0;
-    position: relative;
-    box-shadow: 10px 15px 8px #555555;
-    border-radius: 0.5rem;
-  }
-
-  #card-imagem1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8 #0000;
-    border-radius: 0.5rem;
-  }
-  .cards-text {
-    color: var(--background-secundary-color);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    text-shadow: 2px 5px 5px #000000;
-  }
-
-  .cards-text a {
-    padding: 1rem 4rem;
-    background-color: #b81515;
-    border-radius: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    position: relative;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #cabecalho-menu {
-    display: none;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     gap: 2rem;
   }
-  #menu a {
-    text-decoration: none;
-    color: var(--cor-texto2);
-    margin: 10% 0;
-  }
-  #menu a:hover {
-    border-bottom: solid 2px var(--cor-texto2);
-  }
-
-  .main-banner {
-    width: 100%;
-    height: auto;
-  }
-
-  .main-banner img {
-    width: 100%;
-    height: 620px;
-  }
-
-  .banner-text {
-    width: 100%;
-    font-family: "Montserrat";
-  }
-
-  .banner-text p {
-    padding: 2rem 4rem;
-    text-align: justify;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-  }
-  .main-ofertas {
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: bolder;
-  }
-
-  .borda {
-    border-bottom: solid 4px #8f0101;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    max-width: 100%;
-    margin: 2% 25%;
-  }
-  .ofertas-cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .cards {
-    width: 100%;
-    height: auto;
-    margin: 2% 10%;
-    padding: 1rem 0;
+  .card {
     position: relative;
-    box-shadow: 10px 15px 8px #555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    color: #f5f5f5;
+    margin: 2% 20%;
+    padding: 2% 0;
+    box-shadow: 10px 10px 10px #222222;
+    text-shadow: 2px 2px #c90e0e;
     border-radius: 0.5rem;
   }
-
-  #card-imagem1 {
+  .card img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    opacity: 0.8 #0000;
+    z-index: -2;
+    opacity: 0.9;
     border-radius: 0.5rem;
   }
-  .cards-text {
-    color: var(--background-secundary-color);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    font-size: 0.8rem;
-    text-shadow: 2px 5px 5px #000000;
-  }
 
-  .cards-text a {
-    padding: 1rem 4rem;
-    background-color: #b81515;
-    border-radius: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  header {
-    position: relative;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  #cabecalho-menu {
-    display: none;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 2rem;
-  }
-  #menu a {
+  .card a {
     text-decoration: none;
-    color: var(--cor-texto2);
-    margin: 10% 0;
-    font-size: 1.5rem;
-  }
-  #menu a:hover {
-    border-bottom: solid 2px var(--cor-texto2);
-    margin: 9% 0;
-  }
-
-  .main-banner {
-    width: 100%;
-    height: auto;
-  }
-
-  .main-banner img {
-    width: 100%;
-    height: 80vh;
-  }
-
-  .banner-text {
-    width: 100%;
-    font-family: "Montserrat";
-  }
-
-  .banner-text p {
-    padding: 2rem 4rem;
-    text-align: justify;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-  }
-  .main-ofertas {
-    text-align: center;
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: bolder;
-  }
-
-  .borda {
-    border-bottom: solid 4px #8f0101;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    max-width: 100%;
-    margin: 2% 25%;
-  }
-  .ofertas-cards {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .cards {
-    width: 30%;
-    height: 40vh;
-    margin: 2% 2%;
-    padding: 0 0.5rem 0 1rem;
-    position: relative;
-    display: flex;
-
-    box-shadow: 10px 15px 8px #555555;
+    background-color: #8f0101;
+    margin: 0 20%;
+    padding: 2% 10%;
+    color: #f5f5f5;
     border-radius: 0.5rem;
   }
-
-  #card-imagem1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.8 #0000;
-    border-radius: 0.5rem;
-  }
-  .cards-text {
-    color: var(--background-secundary-color);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    font-size: 1rem;
-    text-shadow: 2px 5px 5px #000000;
-  }
-
-  .cards-text a {
-    padding: 1rem 4rem;
-    background-color: #b81515;
-    border-radius: 0.5rem;
-  }
-
-  .cards-text a:hover {
-    padding: 1rem 4rem;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    color: #b81515;
+  .card a:hover {
     cursor: pointer;
+    color: #b81515;
+    background-color: #f5f5f5;
     text-shadow: none;
+  }
+  /*sessao categorias*/
+  .categorias {
+    width: 100%;
+    height: auto;
+    padding: 10% 0%;
+    text-align: center;
+  }
+  .categorias h4 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .card-container-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+  }
+
+  .card-categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    width: 18rem;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px #222222;
+    margin: 2% 0;
+    color: #807f7f;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  /*destinos populares*/
+  .destinos {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .container-destinos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destinos-imagem {
+    background-image: url("/imagens/Tokyo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    margin: 5% 0;
+    border-radius: 2rem;
+  }
+
+  .destinos-texto p {
+    height: 50%;
+    margin: 5% 5%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 3rem;
+  }
+
+  .destinos #sublinhado {
+    border-bottom: 0.4rem solid #b81515;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 60%;
+    margin: 2% 0;
+  }
+
+  .container-destinos a {
+    background-color: #b81515;
+    color: #f5f5f5;
+    padding: 5% 10%;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
   }
 }
