@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Jornada Viagens</title>
+    <link rel="stylesheet" href="hero.css">
+       <title>Jornada Viagens</title>
 </head>
 <body>
     <header>
@@ -17,60 +18,85 @@
                 <a href="">Contato</a>
             </nav>
     </header>
-    <main class="main-container">
-    <section class="main-banner">
-            <img src="/imagens/banner-mobile.png" alt="imagem de um rio azul claro com palmeiras
-             e coqueiros em suas margens, no rio a barco a remo com uma pessoa dentro">
-            <div class="banner-text">
-                <p>Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino
-                    à seleção das atividades, cuidamos de todos os detalhes para que você apresente ao máximo 
-                    cada momento da sua jornada.
+    <section class="hero">
+        <div class="hero-img">
+            
+        </div>
+        <div class="hero-text">
+            <p>Somos uma agência apaixonada por criar viagens inesquecíveis. 
+                Do destino à seleção das atividades,
+                 cuidamos de todos os detalhes para que você aproveite ao máximo
+                  cada momento da sua jornada!
+            </p>
+        </div>       
+
+    </section>
+    <section class="container-ofertas">
+        <h4>Ofertas da Semana</h4>
+        <div id="sublinhado"></div>
+        <div class="cards">
+            <div class="card">
+                <img src="/imagens/Tokyo.jpg" alt="">
+                <p>HOTEL+AERO</p>
+                <h4>TOKYO</h4>
+                <h4>R$ 4000</h4>
+                <a href="#">Ver detalhes</a>
+            </div>
+
+            <div class="card">
+                <img src="/imagens/Osaka.jpg" alt="">
+                <p>HOTEL+AERO</p>
+                <h4>OSAKA</h4>
+                <h4>R$ 4000</h4>
+                <a href="#">Ver detalhes</a>
+            </div>
+
+            <div class="card">
+                <img src="/imagens/manaus.png" alt="">
+                <p>HOTEL+AERO</p>
+                <h4>LONDRINA</h4>
+                <h4>R$ 4000</h4>
+                <a href="#">Ver detalhes</a>
+            </div>
+            
+        </div>
+    </section>
+    <section class="categorias">
+        <h4>Busca por Categorias</h4>
+        <div id="sublinhado"></div>
+        <div class="card-container-categorias">
+            <div class="card-categoria">
+                <img src="/imagens/ícone - pacotes interacionais.png" alt="">
+                <span>Pacotes Interacionais</span>
+            </div>
+             <div class="card-categoria">
+                <img src="/imagens/ícone - pacotes nacionais.png" alt="">
+                <span>Pacotes Nacionais</span>
+            </div>
+             <div class="card-categoria">
+                <img src="/imagens/ícone - seguro viagem.png" alt="">
+                <span>Seguro Viagem</span>
+            </div>
+             <div class="card-categoria">
+                <img src="/imagens/ícone -transfer.png" alt="">
+                <span>Transfer</span>
+            </div>
+    </section>
+    <section class="destinos">
+        <h1>Destinos Populares</h1>
+        <div id="sublinhado"></div>
+        <div class="container-destinos">
+            <div class="destinos-imagem"></div>
+            <div class="destinos-texto">
+                <h3>Tokyo</h3>
+                <p>Tóquio é uma cidade vibrante e cosmopolita, 
+                    com seus templos históricos, 
+                    museus de arte moderna e arranha-céus icônicos. 
+                    Não perca a chance de mergulhar em sua atmosfera fascinante.
                 </p>
             </div>
-        </section>
-        
-        <section class="main-ofertas">
-            <h1>Ofertas da Semana</h1>
-            <div class="borda"></div> 
-            <div class="ofertas-cards">
-                <div class="cards">
-                    <img src="/imagens/Londrina.png" alt="imagem da cidade de londrina parana" id="card-imagem1">
-                    <div class="cards-text">
-                        <p>HOTEL+AEREO</p>
-                        <h3>Londrina</h3>
-                        <h3>R$ 400,00</h3>
-                        <a src="#">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <img src="/imagens/manaus.png" alt="imagem da cidade de londrina parana" id="card-imagem1">
-                    <div class="cards-text">
-                        <p>HOTEL+AEREO</p>
-                        <h3>Manaus</h3>
-                        <h3>R$ 2000,00</h3>
-                        <a src="#">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <img src="/imagens/Osaka.jpg" alt="imagem da cidade de londrina parana" id="card-imagem1">
-                    <div class="cards-text">
-                        <p>HOTEL+AEREO</p>
-                        <h3>Osaka</h3>
-                        <h3>R$ 5000,00</h3>
-                        <a src="#">Ver Detalhes</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <img src="/imagens/Tokyo.jpg" alt="imagem da cidade de londrina parana" id="card-imagem1">
-                    <div class="cards-text">
-                        <p>HOTEL+AEREO</p>
-                        <h3>Tokyo</h3>
-                        <h3>R$ 4000,00</h3>
-                        <a src="#">Ver Detalhes</a>
-                    </div>
-                </div>
-            </div>      
-        </section>
-    </main>
+            <a href="">Ver Detalhes</a>
+        </div>
+    </section>
 </body>
 </html>
